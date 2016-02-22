@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Got Stuffed & Saw Some Art</title>
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/favicons/android-chrome-192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="assets/favicons/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="assets/favicons/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="assets/favicons/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="assets/favicons/largetile.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <main class="wrapper">
+    <header>
+        <h1>Got Stuffed</h1>
+        <h1 class="small">& Saw Some Art</h1>
+        <p class="header">Lets face it: the only good thing about gallery receptions is the free food/alcohol. This website is a guide to Toronto’s art galleries' food/beverage reception options.</p>
+    </header>
+  
+
+
+    <section id="forms" class="section-1">
+      <div>
+        <form class="search">
+          <h2>Search By Gallery Name</h2>
+          
+          <div class="ui-widget">
+          <!-- <label for="search">Search: </label> -->
+          <input id="searchfield" name="searchfield">
+          <input type="submit" class="search" value="Search">
+          </div>
+        </form>
+      </div>
+      
+      <div class="div-or">
+        <h1 class="or">— or —</h1>
+      </div>
+
+      <div>
+        <form class="advancedSearch">
+        
+        <h2>Neighbourhoods</h2>
+
+          <fieldset class="Neighbourhood">
+            <select name="neighbourhoods" id="neighbourhoods" label="neighbourhoods">
+              <option value="Dupont West">Dupont West</option>
+              <option value="Dundas West">Dundas West</option>
+              <option value="Bloordale">Bloordale</option>
+              <option value="Kensington/Chinatown">Chinatown // Kensington</option>
+              <option value="Queen West">Queen West</option>
+              <option value="401 Richmond">401 Richmond</option>
+              <option value="Central">Central</option>
+              <option value="Tecumseth">Tecumseth</option>
+              <option value="East End">East End</option>
+              <option value="York">York</option>
+            </select>
+          </fieldset>
+          
+          <h2>Type of Gallery</h2>
+
+          <fieldset name="Type of Gallery">
+            <p><input type="checkbox" value="Commercial" id="Commercial" class="checkbox"> Commercial</p>
+            <p><input type="checkbox" value="Public" id="Public"> Public</p>
+            <p><input type="checkbox" value="Artist Run Center" id="Artist Run Center"> Artist-Run</input></p>
+            <p><input type="checkbox" value="DIY" id="DIY"> DIY</p>
+           </fieldset>
+          <input type="submit" class="advancedSearch" value="Search">
+        </form>
+      
+      </div>
+    </section>
+  <h1 class="small hide" id="search-title">Search Results</h1>
+    <section id="results" class="section-2">
+      
+
+      <div class="container">
+      </div>
+    </section> 
+
+    <footer>
+      <p>A project by <a href="http://www.mohammadrezaei.com">Mohammad Rezaei</a> & <a href="http://sarahhamdi.com">Sarah Hamdi</a>.</p>
+      <p>Disclaimer: Ratings by no means reflect the art exhibited at the gallery spaces mentioned here. This is not an exhaustive list or representation of the Toronto arts scene. <a href="mailto:mhmmdrzaei@gmail.com">Contact us</a> if you have any suggestions, questions or concerns.</p>
+      <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.gotstuffed.ca" data-text="Got Stuffed & Saw Some Art" data-hashtags="toronto">Share On Twitter</a><div class="fb-share-button" data-href="http://www.gotstuffed.ca" data-layout="button"></div></p>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </footer>
+
+  </main>
+
+</body>
+<script type="text/javascript" src="smoothscroll/smoothscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="scripts.js"></script>
+
+
+</html>
