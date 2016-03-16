@@ -14,7 +14,8 @@ $color-grey:rgba(99, 99, 94, 1);
 }
 
 body {
-	background: url('assets/background1.jpg') left top;
+	background: url('assets/background.jpg') center no-repeat;
+	background-size: cover;
 	padding: 50px 40px;
 }
 .flex {
@@ -103,13 +104,26 @@ h4 {
 }
 
 
-
+// ANIMATIONS 
+.animations {
+	background: url(assets/beer.png);
+		animation: beer 3s infinite;
+		position: relative;
+		top: 200px;
+		left: 100px;
+		opacity: .1;
+}
+@keyframes beer {
+     0% {transform:rotate(0deg) translateX(0px)}
+    100% {transform:rotate(360deg) translateX(0px) }
+}
 .wrapper{
 	max-width: 960px;
 	margin: 0 auto;
 	background: rgba(255, 184, 177, .9);
 	border: 5px solid $color-green; 
-	padding: 50px;
+	padding: 33px;
+	z-index: 999;
 
 }
 .results {
@@ -151,9 +165,21 @@ section.section-1 {
 	justify-content: space-between;
 	margin-bottom: 50px;
 	div {
-		margin: 10px;
+		// margin: 10px;
 		// width: calc(30% - 20px);
 	}
+}
+// divs 
+.itemSearch {
+	width: 40%
+}
+
+.itemAdvanced {
+	width: 40%
+}
+section.forms {
+	justify-content: center;
+	display: flex;
 }
 
 section.section-2 {
@@ -205,7 +231,7 @@ input.search,
 input.advancedSearch {
 	width: 100%;
 	margin-top: 10px ;
-	background: $color-border;
+	background: $color-blue;
 	border: none;
 	padding: 10px;
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.13);
@@ -326,7 +352,7 @@ span.ui-helper-hidden-accessible {
 		align-items:center;
 	}
 	h1.or{
-		margin-top: 0;
+		margin-top: 25px;
 	}
 	h1#search-title{
 		text-align: center;
@@ -335,6 +361,13 @@ span.ui-helper-hidden-accessible {
 	.results {
 		width: calc(50% - 10px);
 		// max-width: auto;
+	}
+	.itemSearch {
+		width: 80%
+	}
+
+	.itemAdvanced {
+		width: 80%
 	}
 
 	
@@ -350,8 +383,18 @@ span.ui-helper-hidden-accessible {
 	div.container{
 		justify-content: center;
 	}
+	.itemSearch {
+		width: 95%
+	}
+
+	.itemAdvanced {
+		width: 95%
+	}
 }
 @media(max-width: 500px){
+	body {
+		padding: 34px 20px;
+	}
 	.wrapper {
 		padding: 30px;
 		margin:0 -5px;
@@ -401,5 +444,6 @@ span.ui-helper-hidden-accessible {
 		margin: 5px 0;
 		// max-width: auto;
 	}
+
 }
 
